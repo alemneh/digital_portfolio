@@ -4,54 +4,75 @@
     <meta charset="UTF-8">
     <title>Blog</title>
     <link rel="stylesheet" href="vendor/styles/normalize.css">
-    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/modules.css">
-    <a href="#"></a>
-
+    <link rel="stylesheet" href="styles/colors.css">
+  </head>
   </head>
   <body>
+    <header class="site-header">
+      <h1>
+        Kilovolt Blog!
+      </h1>
+      <p>The shocking power of static pages</p>
+    </header>
+    <nav class="main-nav">
+      <ul>
+        <li class="tab" data-content=""><a href="#"><i class="icon icon-home"></i> Home</a></li>
+        <li class="tab" data-content="about"><a href="#about"><i class="icon icon-rocket"></i> About</a></li>
+        <li><a href="http://twitter.com/alemneha" target="_blank"><i class="icon icon-twitter3"></i> Twitter</a></li>
+        <li><a href="http://github.com/alemneh" target="_blank"><i class="icon icon-github"></i> GitHub</a></li>
+      </ul>
+    </nav>
     <main>
-        <header>
-          <h1>
-            Alemneh Asefa
-          </h1>
-          <p>Portfolio</p>
-        </header>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</li>
-            <li><a href="https://twitter.com/alemnehasefa" target="_blank">Twitter</a></li>
-            <li><a href="http://github.com/alemneh" target="_blank">Github</a></li>
+      <section id="articles" class="tab-content">
+        <div>
+          <ul id="filters">
+            <li>
+              <select id="author-filter">
+                <option value="">-- Filter by Authors --</option>
+              </select>
+            </li>
+            <li>
+              <select id="category-filter">
+                <option value="">-- Filter by Categories --</option>
+              </select>
+            </li>
           </ul>
-        </nav>
-        <section id="about">
-          <h2>About</h2>
-          <p>Put a bird on it drinking vinegar pork belly, trust fund leggings VHS etsy hoodie kale chips. Green juice poutine semiotics humblebrag helvetica, irony vice whatever aesthetic tofu hella polaroid craft beer street art +1. Raw denim mumblecore try-hard, semiotics salvia gluten-free ugh occupy selfies listicle ethical. IPhone literally leggings, mixtape art party intelligentsia marfa microdosing fanny pack health goth. Irony affogato health goth try-hard, sartorial chambray butcher flannel keytar deep v meggings williamsburg cliche. Single-origin coffee kogi brooklyn bitters. Meggings you probably haven't heard of them squid kitsch narwhal.</p>
+        </div>
+        <article class="template" data-category="">
+          <header>
+            <h1>Title</h1>
+            <div class="byline">
+              By <address><a href="">Author Name</a></address>
+            </div>
+          </header>
+          <section class="article-body"></section>
+          <a href="#" class="read-on">Read on &rarr;</a>
+        </article>
+      </section>
+      <section id="about" class="tab-content">
+        <header>
+          Welcome to my Blog
+        </header>
+        <section>
+          <h1>Some of my intrests:</h1>
+          <ul>
+            <li>Coding</li>
+            <li>Sharing what I've learned</li>
+            <li>Hanging with my family</li>
+          </ul>
         </section>
-        <section id="portfolio">
-          <h2>Portfolio</h2>
-          <article class="template" data-category="">
-            <header>
-              <h1>Title</h1>
-              <div class="byline">
-                By <address><a href="">Alemneh Asefa</a></address>
-                published <time pubdate datetime="2000-01-01">Publish Time</time>
-              </div>
-            </header>
-            <section class="article-body"></section>
-          </article>
-        </section>
-      </div>
+      </section>
     </main>
     <footer>
       &copy; 2015 Code Fellows | Static Blog | Happy Ipsum!
     </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="scripts/blogArticles.js"></script>
-        <script src="scripts/article.js"></script>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="scripts/blogArticles.js"></script>
+    <script src="scripts/article.js"></script>
+    <script src="scripts/articleView.js"></script>
   </body>
 </html>
