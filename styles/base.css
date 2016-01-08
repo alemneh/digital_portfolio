@@ -12,12 +12,30 @@ hr {
   width: 80%;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*TEXT STYLES
 =======================================*/
+
+h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+}
 p {
   font-size: 1em;
 }
 
+#hamburger {
+  background-color: #7AE55A;
+}
+i.icon-menu{
+  float: right;
+  font-size: 400%;
+
+
+}
 address {
   display: inline-block;
 }
@@ -25,9 +43,26 @@ address {
 /*LINK STYLES
 =======================================*/
 
+nav {
+  background-color: #7AE55A;
+  max-width: 100%;
+  margin: 0 0 10px 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+
+}
+
+
+
 a, a:link, a:active {
   text-decoration: none;
-  color: #224019;
+  color: black;
 }
 
 a:hover, a:focus {

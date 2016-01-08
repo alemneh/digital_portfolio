@@ -1,17 +1,12 @@
-header {
-  background-color: #447F32;
+header.site-header {
+  background-color: black;
+  color: white;
 }
-
-nav ul li {
-  background-color: #7AE55A;
-}
-
-
-#about {
-  background-color:  #87FF64;
+main {
+  color: black;
 }
 
 footer {
-  background-color: #224019;
+  background-color: #595959;
   color: white;
 }
