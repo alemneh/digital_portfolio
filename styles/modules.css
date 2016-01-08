@@ -2,6 +2,7 @@
 
 .site-header {
   padding: .1em;
+  float: left;
 }
 
 .main-nav {
@@ -51,9 +52,10 @@
 
 @media only screen and (min-width: 640px) {
   .main-nav ul li {
-    display: inline-block;
+
 
   }
+
 
   i.icon-menu {
     display: none;
@@ -62,6 +64,20 @@
 }
 
 @media only screen and (max-width: 640px) {
+  nav ul {
+    display: none;
+  }
 
+  #left {
+    float: none;
+    position: static;
+    max-width: 100%;
+
+  }
+
+  #right {
+    float: none;
+    max-width: 100%;
+  }
 
 }
