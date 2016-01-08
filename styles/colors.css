@@ -4,6 +4,7 @@ header.site-header {
 }
 main {
   color: black;
+  max-width: 100%;
 }
 
 footer {

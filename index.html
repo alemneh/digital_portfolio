@@ -11,70 +11,46 @@
   </head>
   </head>
   <body>
-    <header class="site-header">
-      <h1>
-        Alemneh's Blog!
-      </h1>
-      <h3>Web Developer</h3>
+    <div id="left">
+      <header class="site-header">
+        <h1>Alemneh Asefa</h1>
+        <img id="portfolioPic" src="images/alem.jpg">
+        <h3>Web Developer</h3>
 
-    </header>
-    <div id="hamburger">
-      <i class="icon-menu"></i>
-    </div>
-    <nav class="main-nav">
+      </header>
 
-      <ul>
-        <li class="tab" data-content=""><a href="#"><i class="icon icon-home"></i> Home</a></li>
-        <li class="tab" data-content="about"><a href="#about"><i class="icon icon-rocket"></i> About</a></li>
-        <li><a href="http://twitter.com/alemneha" target="_blank"><i class="icon icon-twitter3"></i> Twitter</a></li>
-        <li><a href="http://github.com/alemneh" target="_blank"><i class="icon icon-github"></i> GitHub</a></li>
-      </ul>
-    </nav>
-    <main>
-      <img src="http://placehold.it/700x300">
-      <section id="articles" class="tab-content">
-        <div>
-          <ul id="filters">
-            <li>
-              <select id="author-filter">
-                <option value="">-- Filter by Authors --</option>
-              </select>
-            </li>
-            <li>
-              <select id="category-filter">
-                <option value="">-- Filter by Categories --</option>
-              </select>
-            </li>
-          </ul>
-        </div>
-        <article class="template" data-category="">
-          <header>
-            <h1>Title</h1>
-            <div class="byline">
-              By <address><a href="">Author Name</a></address>
-            </div>
-          </header>
-          <section class="article-body"></section>
-          <a href="#" class="read-on">Read on &rarr;</a>
-        </article>
-      </section>
-      <section id="about" class="tab-content">
-        <h1>
-          Welcome to my Blog
-        </h1>
-        <section>
-          <h2>Some of my intrests:</h2>
-          <ul>
-            <li>Coding</li>
-            <li>Sharing what I've learned</li>
-            <li>Hanging with my family</li>
-          </ul>
-        </section>
-      </section>
-    </main>
-    <footer>
-      &copy; 2015 Code Fellows | Static Blog | Happy Ipsum!
-    </footer>
+      <div id="hamburger">
+        <i class="icon-menu"></i>
+      </div>
+
+      <nav class="main-nav">
+
+        <ul>
+          <li class="tab" data-content=""><a href="#"><i class="icon icon-home"></i> Home</a></li>
+          <li class="tab" data-content="about"><a href="#about"><i class="icon icon-rocket"></i> About</a></li>
+          <li><a href="http://twitter.com/alemneha" target="_blank"><i class="icon icon-twitter3"></i> Twitter</a></li>
+          <li><a href="http://github.com/alemneh" target="_blank"><i class="icon icon-github"></i> GitHub</a></li>
+        </ul>
+      </nav>
+    </div><!-- end left colum -->
+      <div id="right">
+      <main>
+        <section id="portfolio"></section>
+        <h1>Portfolio</h1>
+        <img src="http://placehold.it/700x300">
+
+        <section id="about" class="tab-content">
+          <h1>About</h1>
+          <p>Hello, my name is Alem I hold a BA in International Security and Conflict Resolution (ISCOR) with an emphasis in economics from SDSU. After completing my BA I pursed a MA in Economics but half way through found a love for coding and decided to make change of direction in what I wanted to pursue. I have been teaching myself to code for the past year through many online tutorials and classes that I can find. I decided on focusing on javascript as the programming language I wanted to learn because of the potential it has in the future, also not to mention that it is the language of the web and can now be used on the server-side with nodeJS.</p>
+          <p>Hello, my name is Alem I hold a BA in International Security and Conflict Resolution (ISCOR) with an emphasis in economics from SDSU. After completing my BA I pursed a MA in Economics but half way through found a love for coding and decided to make change of direction in what I wanted to pursue. I have been teaching myself to code for the past year through many online tutorials and classes that I can find. I decided on focusing on javascript as the programming language I wanted to learn because of the potential it has in the future, also not to mention that it is the language of the web and can now be used on the server-side with nodeJS.</p>
+          <p>Hello, my name is Alem I hold a BA in International Security and Conflict Resolution (ISCOR) with an emphasis in economics from SDSU. After completing my BA I pursed a MA in Economics but half way through found a love for coding and decided to make change of direction in what I wanted to pursue. I have been teaching myself to code for the past year through many online tutorials and classes that I can find. I decided on focusing on javascript as the programming language I wanted to learn because of the potential it has in the future, also not to mention that it is the language of the web and can now be used on the server-side with nodeJS.</p>
+          <p>Hello, my name is Alem I hold a BA in International Security and Conflict Resolution (ISCOR) with an emphasis in economics from SDSU. After completing my BA I pursed a MA in Economics but half way through found a love for coding and decided to make change of direction in what I wanted to pursue. I have been teaching myself to code for the past year through many online tutorials and classes that I can find. I decided on focusing on javascript as the programming language I wanted to learn because of the potential it has in the future, also not to mention that it is the language of the web and can now be used on the server-side with nodeJS.</p>
+          </section><!-- end about section -->
+      </main>
+      <footer>
+        &copy; 2015 Code Fellows | Static Blog | Happy Ipsum!
+      </footer>
+    </div><!-- end right colum -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="scripts/blogArticles.js"></script>
