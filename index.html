@@ -8,20 +8,34 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/colors.css">
+
+    <script id="portfolioData"  type="text/x-handlebars-template">
+
+
+
+              <article id="template">
+                <img src="{{imageUrl}}">
+                <h3><a href="{{link}}">{{title}}</a></h3>
+
+                <p id="info">{{description}}</p>
+              </article><!-- end portfolio template -->
+
+    </script>
   </head>
   </head>
   <body>
-    <div id="left">
+    <div id="left" class="center">
       <header class="site-header">
         <h1>Alemneh Asefa</h1>
         <img id="portfolioPic" src="images/alem.jpg">
         <h3>Web Developer</h3>
 
-      </header>
 
+      </header>
       <div id="hamburger">
         <i class="icon-menu"></i>
       </div>
+
 
       <nav class="main-nav">
 
@@ -34,17 +48,10 @@
       </nav>
     </div><!-- end left colum -->
       <div id="right">
-      <main>
+      <main class="center">
         <section id="portfolio">
 
-          <h1>Portfolio</h1>
-
-          <article id="template">
-            <img src="{{imageUrl}}">
-            <h3><a href="{{link}}">{{title}}</a></h3>
-
-            <p id="info">{{description}}</p>
-          </article><!-- end portfolio template -->
+          <h1>Portfolio</h1><!-- handlebars data comes after this -->
 
         </section><!-- end portfolio section -->
 
@@ -58,12 +65,13 @@
 
          </section><!-- end about section -->
       </main><!-- end main -->
-      <footer>
+      <footer class="center">
         &copy; 2015 Code Fellows | Static Blog | Happy Ipsum!
       </footer><!-- end footer -->
     </div><!-- end right colum -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
     <script src="scripts/blogArticles.js"></script>
     <script src="scripts/article.js"></script>
     <script src="scripts/articleView.js"></script>
