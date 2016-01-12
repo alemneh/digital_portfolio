@@ -1,5 +1,3 @@
-var examples = [];
-
 function Example (opts) {
   this.title = opts.title;
   this.imageUrl = opts.imageUrl;
@@ -7,27 +5,41 @@ function Example (opts) {
   this.description = opts.description;
 }
 
+Example.all = [];
+
 Example.prototype.toHtml = function() {
+  var template = Handlebars.compile($('#portfolioData').text());
 
-  var appTemplate = $('#portfolioData').html();
-
-  var compileTemplate = Handlebars.compile(appTemplate);
-
-  var dataSource = {
-    title: this.title,
-    imageUrl: this.imageUrl,
-    link: this.link,
-    description: this.description
-  };
-
-  var html = compileTemplate(dataSource);
-  $('#portfolio').append(html);
+  return template(this);
 };
 
-rawData.forEach(function(ele) {
-  examples.push(new Example(ele));
-});
+Example.loadAll = function(rawData) {
+  rawData.forEach(function(ele) {
+    Example.all.push(new Example(ele));
+  });
+};
 
-examples.forEach(function(a) {
-  $('#portfolio').append(a.toHtml());
-});
+Example.fetchAll = function() {
+  if(localStorage.rawData) {
+    Example.loadAll(JSON.parse(localStorage.rawData));
+    articleView.initIndexPage();
+
+  } else {
+    $.getJSON('/data/portfolioExampoles.json', function(rawData) {
+      Example.loadAll(rawData);
+      localStorage.rawData = JSON.stringify(rawData);
+      articleView.initIndexPage();
+    });
+
+  }
+};
+
+
+
+
+var dataSource = {
+  title: this.title,
+  imageUrl: this.imageUrl,
+  link: this.link,
+  description: this.description
+};
