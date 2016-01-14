@@ -8,18 +8,17 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/colors.css">
-
+    <script id="stats" type="text"text/x-handlebars-template>
+      <div>
+        <p>Total Projects: {{}}</p>
+      </div>
+    </script><!-- end stats template -->
     <script id="portfolioData"  type="text/x-handlebars-template">
-
-
-
-              <article id="template">
-                <img src="{{imageUrl}}">
-                <h3><a href="{{link}}">{{title}}</a></h3>
-
-                <p id="info">{{description}}</p>
-              </article><!-- end portfolio template -->
-
+      <article id="template">
+        <img src="{{imageUrl}}">
+        <h3><a href="{{link}}">{{title}}</a></h3>
+        <p id="info">{{description}}</p>
+      </article><!-- end portfolio template -->
     </script>
   </head>
   </head>
@@ -40,30 +39,34 @@
       <nav class="main-nav">
 
         <ul>
-          <li class="tab" data-content=""><a href="#"><i class="icon icon-home"></i> Home</a></li>
-          <li class="tab" data-content="about"><a href="#about"><i class="icon icon-rocket"></i> About</a></li>
+          <li class="tab" data-content=""><a href="#"><i class="icon icon-home"></i> About</a></li>
+          <li class="tab" data-content="about"><a href="#portfolio"><i class="icon icon-rocket"></i> Portfolio</a></li>
           <li><a href="http://twitter.com/alemneha" target="_blank"><i class="icon icon-twitter3"></i> Twitter</a></li>
           <li><a href="http://github.com/alemneh" target="_blank"><i class="icon icon-github"></i> GitHub</a></li>
         </ul>
       </nav>
     </div><!-- end left colum -->
       <div id="right">
-      <main class="center">
-        <section id="portfolio">
+      <main class="">
+      <section id="about" class="tab-content">
 
-          <h1>Portfolio</h1><!-- handlebars data comes after this -->
+         <h1>About</h1>
+         <p>Hello, my name is Alem I hold a BA in International Security and Conflict Resolution (ISCOR) with an emphasis in economics from SDSU. After completing my BA I pursed a MA in Economics but half way through found a love for coding and decided to make change of direction in what I wanted to pursue. I have been teaching myself to code for the past year through many online tutorials and classes that I can find. I decided on focusing on javascript as the programming language I wanted to learn because of the potential it has in the future, also not to mention that it is the language of the web and can now be used on the server-side with nodeJS.</p>
+         <p>Hello, my name is Alem I hold a BA in International Security and Conflict Resolution (ISCOR) with an emphasis in economics from SDSU. After completing my BA I pursed a MA in Economics but half way through found a love for coding and decided to make change of direction in what I wanted to pursue. I have been teaching myself to code for the past year through many online tutorials and classes that I can find. I decided on focusing on javascript as the programming language I wanted to learn because of the potential it has in the future, also not to mention that it is the language of the web and can now be used on the server-side with nodeJS.</p>
+         <p>Hello, my name is Alem I hold a BA in International Security and Conflict Resolution (ISCOR) with an emphasis in economics from SDSU. After completing my BA I pursed a MA in Economics but half way through found a love for coding and decided to make change of direction in what I wanted to pursue. I have been teaching myself to code for the past year through many online tutorials and classes that I can find. I decided on focusing on javascript as the programming language I wanted to learn because of the potential it has in the future, also not to mention that it is the language of the web and can now be used on the server-side with nodeJS.</p>
+         <p>Hello, my name is Alem I hold a BA in International Security and Conflict Resolution (ISCOR) with an emphasis in economics from SDSU. After completing my BA I pursed a MA in Economics but half way through found a love for coding and decided to make change of direction in what I wanted to pursue. I have been teaching myself to code for the past year through many online tutorials and classes that I can find. I decided on focusing on javascript as the programming language I wanted to learn because of the potential it has in the future, also not to mention that it is the language of the web and can now be used on the server-side with nodeJS.</p>
 
-        </section><!-- end portfolio section -->
+       </section><!-- end about section -->
+       <section id="portfolio">
 
-        <section id="about" class="tab-content">
+         <h1>Portfolio</h1><!-- handlebars data comes after this -->
+         <dl>
+           <dt><strong>Total projects:</strong></dt><dd class="projects"></dd>
+           <dt><strong>Total words:</strong></dt><dd class="words"></dd>
+         </dl><!-- end of stats table -->
 
-            <h1>About</h1>
-            <p>Hello, my name is Alem I hold a BA in International Security and Conflict Resolution (ISCOR) with an emphasis in economics from SDSU. After completing my BA I pursed a MA in Economics but half way through found a love for coding and decided to make change of direction in what I wanted to pursue. I have been teaching myself to code for the past year through many online tutorials and classes that I can find. I decided on focusing on javascript as the programming language I wanted to learn because of the potential it has in the future, also not to mention that it is the language of the web and can now be used on the server-side with nodeJS.</p>
-            <p>Hello, my name is Alem I hold a BA in International Security and Conflict Resolution (ISCOR) with an emphasis in economics from SDSU. After completing my BA I pursed a MA in Economics but half way through found a love for coding and decided to make change of direction in what I wanted to pursue. I have been teaching myself to code for the past year through many online tutorials and classes that I can find. I decided on focusing on javascript as the programming language I wanted to learn because of the potential it has in the future, also not to mention that it is the language of the web and can now be used on the server-side with nodeJS.</p>
-            <p>Hello, my name is Alem I hold a BA in International Security and Conflict Resolution (ISCOR) with an emphasis in economics from SDSU. After completing my BA I pursed a MA in Economics but half way through found a love for coding and decided to make change of direction in what I wanted to pursue. I have been teaching myself to code for the past year through many online tutorials and classes that I can find. I decided on focusing on javascript as the programming language I wanted to learn because of the potential it has in the future, also not to mention that it is the language of the web and can now be used on the server-side with nodeJS.</p>
-            <p>Hello, my name is Alem I hold a BA in International Security and Conflict Resolution (ISCOR) with an emphasis in economics from SDSU. After completing my BA I pursed a MA in Economics but half way through found a love for coding and decided to make change of direction in what I wanted to pursue. I have been teaching myself to code for the past year through many online tutorials and classes that I can find. I decided on focusing on javascript as the programming language I wanted to learn because of the potential it has in the future, also not to mention that it is the language of the web and can now be used on the server-side with nodeJS.</p>
+       </section><!-- end portfolio section -->
 
-         </section><!-- end about section -->
       </main><!-- end main -->
       <footer class="center">
         &copy; 2015 Code Fellows | Static Blog | Happy Ipsum!
