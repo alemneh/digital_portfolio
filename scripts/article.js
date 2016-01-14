@@ -88,7 +88,20 @@
   };
 
   Example.numWordsByTitle = function() {
-    return Example.allTitles().map();
+    return Example.allTitles().map(function(title) {
+      return {
+        name: title,
+        numWords: Example.all.filter(function(a) {
+          return a.title === title;
+        })
+        .map(function(a) {
+          var words = a.description.split(' ');
+          return words.length;
+        }).reduce(function(a,b) {
+          return (a+b);
+        })
+      };
+    });
 
   };
   module.Example = Example;
