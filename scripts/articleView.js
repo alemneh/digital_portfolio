@@ -34,17 +34,17 @@ articleView.handleAuthorFilter = function() {
       console.log($articles);
       $articles.hide();
       $('article').each(function(){
-        if ($(this).data("author") === $name){
+        if ($(this).data('author') === $name){
           $(this).fadeIn();
         }
-      })
+      });
     } else {
       $('article').fadeIn();
     };
-    });
+  });
 
-      $('#category-filter').val('');
-    };
+  $('#category-filter').val('');
+};
 
 
 
@@ -57,10 +57,10 @@ articleView.handleCategoryFilter = function() {
       console.log($articles);
       $articles.hide();
       $('article').each(function(){
-        if ($(this).data("category") === $name){
+        if ($(this).data('category') === $name){
           $(this).fadeIn();
         }
-      })
+      });
     } else {
       $('article').fadeIn();
     };
@@ -74,10 +74,10 @@ articleView.handleCategoryFilter = function() {
 
 articleView.handleMainNav = function() {
 
-  $('.main-nav').on('click', function(e) {
-    e.preventDefault();
+  $('.main-nav li a').on('click', function(e) {
+    //e.preventDefault();
     $('.tab-content').hide();
-    var $target = $(e.target).data("content");
+    var $target = $(e.target).data('content');
     console.log($('#'+$target));
     $('#'+$target).fadeIn();
     //$('"#'+$target+'"').show();
@@ -97,8 +97,8 @@ articleView.setTeasers = function() {
   $('#articles').on('click', function(e){
     e.preventDefault();
     if ($(e.target).hasClass('read-on')){
-        $(e.target).siblings().children().fadeIn();
-        $(e.target).hide();
+      $(e.target).siblings().children().fadeIn();
+      $(e.target).hide();
 
     }
   });
@@ -106,6 +106,7 @@ articleView.setTeasers = function() {
 };
 
 $(document).ready(function (){
+  $('#articles, #about').hide();
   articleView.populateFilters();
   articleView.handleAuthorFilter();
   articleView.handleCategoryFilter();
