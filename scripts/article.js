@@ -29,7 +29,7 @@
 
   Example.getAll = function () {
     $.getJSON('/data/portfolioExamples.json', function(rawData) {
-      console.log('else worked');
+      //console.log('else worked');
       Example.loadAll(rawData);
       localStorage.rawData = JSON.stringify(rawData);
       articleView.initIndexPage();
@@ -62,11 +62,11 @@
   Example.numWordsAll = function() {
     return Example.all.map(function(example) {
       var words = example.description.split(' ');
-      console.log(words.length);
+      //console.log(words.length);
       return words.length;
     })
     .reduce(function(prev, cur) {
-      console.log(prev + cur);
+      //console.log(prev + cur);
       return prev + cur;
     });
 
@@ -75,7 +75,7 @@
   Example.allTitles = function() {
     return Example.all.map(function(example) {
       var titles = example.title;
-      console.log(titles);
+      //console.log(titles);
       return titles;
     })
     .reduce(function(prev, cur) {

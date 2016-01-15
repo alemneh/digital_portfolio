@@ -8,6 +8,9 @@ body {
 
 }
 
+
+
+
 .center {
   text-align: center;
 }
@@ -18,13 +21,15 @@ body {
   float: left;
   height: 100%;
   position: fixed;
+  padding: 5%;
 
 }
 
 #right {
-  max-width: 70%;
+  max-width: 60%;
   float: right;
   height: 200%;
+  padding: 0 5% 0 0;
 
 }
 
@@ -38,23 +43,35 @@ img {
 }
 
 #portfolioPic {
-  margin: 0;
+  margin: 5px 0;
   padding: 0;
   border-radius: 50%;
 }
 
 /*TEXT STYLES
 =======================================*/
+#template {
+  padding: 0;
+  margin: 50px 0;
+  color: black;
+}
 
+#template img {
+  margin: 0 0 10px 0;
+}
 h1, h2, h3 {
   padding: 0;
   margin: 0;
+  font-family: 'Martel', serif;
+  color: #0290A7;
 }
 p {
-  font-size: 1em;
+  font-size: 1.2em;
+  font-family: times;
 }
 
-#hamburger {
+i #hamburger {
+    color: white;
 
 }
 i.icon-menu{
@@ -85,7 +102,7 @@ dd {
 =======================================*/
 
 nav {
-  background-color: #7AE55A;
+  background-color: ;
   max-width: 100%;
   margin: 0 0 10px 0;
 }
@@ -103,7 +120,8 @@ nav ul {
 
 a, a:link, a:active {
   text-decoration: none;
-  color: black;
+  color: white;
+  font-family: times;
 }
 
 a:hover, a:focus {

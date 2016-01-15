@@ -1,6 +1,7 @@
 header.site-header {
   background-color: black;
   color: white;
+
 }
 main {
   color: black;
@@ -8,6 +9,9 @@ main {
 }
 
 footer {
-  background-color: #595959;
-  color: white;
+  background-color: ;
+  color: #0290A7;
+  padding: 0;
+  margin: 10px 0;
+  font-family: times;
 }
