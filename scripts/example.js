@@ -32,7 +32,7 @@
       //console.log('else worked');
       Example.loadAll(rawData);
       localStorage.rawData = JSON.stringify(rawData);
-      articleView.initIndexPage();
+      exampleView.initIndexPage();
 
     });
   };
@@ -49,7 +49,7 @@
             Example.getAll();
           } else {
             Example.loadAll(JSON.parse(localStorage.rawData));
-            articleView.initIndexPage();
+            exampleView.initIndexPage();
           }
         }
       });
