@@ -8,13 +8,9 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/colors.css">
-    <script id="stats" type="text"text/x-handlebars-template>
-      <div>
-        <p>Total Projects: {{}}</p>
-      </div>
-    </script><!-- end stats template -->
+
     <script id="portfolioData"  type="text/x-handlebars-template">
-      <article id="template">
+      <article id="template" class="center">
         <img src="{{imageUrl}}">
         <a href="{{link}}"><h3>{{title}}</h3></a>
         <p id="info">{{description}}</p>
@@ -47,16 +43,14 @@
     </div><!-- end left colum -->
       <div id="right">
       <main class="">
-      <section id="about">
+      <section id="about" class="center">
 
          <h1>About</h1>
          <p>Hello, my name is Alem I hold a BA in International Security and Conflict Resolution (ISCOR) with an emphasis in economics from SDSU. After completing my BA I pursed a MA in Economics but half way through found a love for coding and decided to make change of direction in what I wanted to pursue. I have been teaching myself to code for the past year through many online tutorials and classes that I can find. I decided on focusing on javascript as the programming language I wanted to learn because of the potential it has in the future, also not to mention that it is the language of the web and can now be used on the server-side with nodeJS.</p>
-         <p>Hello, my name is Alem I hold a BA in International Security and Conflict Resolution (ISCOR) with an emphasis in economics from SDSU. After completing my BA I pursed a MA in Economics but half way through found a love for coding and decided to make change of direction in what I wanted to pursue. I have been teaching myself to code for the past year through many online tutorials and classes that I can find. I decided on focusing on javascript as the programming language I wanted to learn because of the potential it has in the future, also not to mention that it is the language of the web and can now be used on the server-side with nodeJS.</p>
-         <p>Hello, my name is Alem I hold a BA in International Security and Conflict Resolution (ISCOR) with an emphasis in economics from SDSU. After completing my BA I pursed a MA in Economics but half way through found a love for coding and decided to make change of direction in what I wanted to pursue. I have been teaching myself to code for the past year through many online tutorials and classes that I can find. I decided on focusing on javascript as the programming language I wanted to learn because of the potential it has in the future, also not to mention that it is the language of the web and can now be used on the server-side with nodeJS.</p>
-         <p>Hello, my name is Alem I hold a BA in International Security and Conflict Resolution (ISCOR) with an emphasis in economics from SDSU. After completing my BA I pursed a MA in Economics but half way through found a love for coding and decided to make change of direction in what I wanted to pursue. I have been teaching myself to code for the past year through many online tutorials and classes that I can find. I decided on focusing on javascript as the programming language I wanted to learn because of the potential it has in the future, also not to mention that it is the language of the web and can now be used on the server-side with nodeJS.</p>
-
+         <h3>Git Repos</h3>
+         <ul></ul>
        </section><!-- end about section -->
-       <section id="portfolio" class="selected">
+       <section id="portfolio" class="selected center">
 
          <h1>Portfolio</h1><!-- handlebars data comes after this -->
          <dl>
@@ -74,12 +68,15 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="/vendor/scripts/page.js"></script>
+    <script src="/.gitignore/githubToken.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 
     <script src="scripts/example.js"></script>
     <script src="scripts/exampleView.js"></script>
     <script src="/scripts/examplesController.js"></script>
     <script src="/scripts/aboutController.js"></script>
+    <script src="/scripts/repo.js"></script>
+    <script src="/scripts/repoView.js"></script>
     <script src="/scripts/routes.js"></script>
     <script></script>
   </body>

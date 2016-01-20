@@ -29,7 +29,7 @@ body {
   max-width: 60%;
   float: right;
   height: 200%;
-  padding: 0 5% 0 0;
+  padding: 5%;
 
 }
 
@@ -116,7 +116,10 @@ nav ul {
 
 }
 
-
+#about ul {
+  margin: 10px 0;
+  padding: 0;
+}
 
 a, a:link, a:active {
   text-decoration: none;
@@ -126,6 +129,8 @@ a, a:link, a:active {
 
 a:hover, a:focus {
 }
+
+
 
 a:visited {
 }
