@@ -11,6 +11,7 @@
              '?per_page=100' + '&sort=updated',
       type: 'GET',
       success: function(data, message, xhr) {
+        //console.log(data);
         repos.all = data;
       }
     }).done(callback);
