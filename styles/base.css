@@ -1,134 +1,107 @@
+/*=======================================
+MAIN STYLES
+=======================================*/
 
 body {
-  line-height: 1.5;
-  font-size: 100%;
-  color: #313131;
-
+  background-color: lightgreen;
 }
 
-
-
-
-.center {
-  text-align: center;
-}
-
-#left {
-  background-color: black;
-  max-width: 30%;
-  float: left;
-  height: 100%;
-  position: fixed;
-  padding: 5%;
-
-}
-
-#right {
-  max-width: 60%;
-  float: right;
-  height: 200%;
-  padding: 5%;
-
-}
-
-hr {
-  margin: 1em;
-  width: 80%;
+p {
+    font-size: 20px;
 }
 
 img {
-  max-width: 100%;
+  border-radius: 5%;
+  border: 5px solid darkgreen;
 }
 
-#portfolioPic {
-  margin: 5px 0;
-  padding: 0;
-  border-radius: 50%;
+#about img {
+  margin: 2% 0;
 }
 
-/*TEXT STYLES
+#about, #portfolio, #contact {
+  margin: 5% 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+#bio {
+  width: 800px;
+  margin: 0 auto;
+}
+
+
+footer{
+  text-align: center;
+  color: #0A8654;
+}
+
+/*=======================================
+TEXT STYLES
 =======================================*/
-#template {
-  padding: 0;
-  margin: 50px 0;
-  color: black;
+/*p {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  width: 760px;
+  margin: 10px auto;
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+}*/
+
+/*=======================================
+NAVIGATION STYLES
+=======================================*/
+nav li {
+    display: inline;
+    margin-right: 6%;
 }
 
-#template img {
-  margin: 0 0 10px 0;
+header {
+    text-align: center;
 }
-h1, h2, h3 {
-  padding: 0;
-  margin: 0;
-  font-family: 'Martel', serif;
-  color: #0290A7;
+a {
+  color: #0A8654;
+  font-family: "Arial Black", Gadget, sans-serif;
 }
-p {
-  font-size: 1.2em;
-  font-family: times;
+a:link {
+    text-decoration: none;
 }
-
-i #hamburger {
+a:hover {
     color: white;
-
-}
-i.icon-menu{
-  background-color: black;
-  color: white;
-  float: right;
-  font-size: 400%;
-  padding: 0;
-  margin: 0;
-
-
-
-}
-address {
-  display: inline-block;
 }
 
-dt,dd{
-  display:inline;
+a:active {
+    color: darkgreen;
 }
 
-dd {
-  margin-left: 5px;
-  margin-right: 10px;
-}
-
-/*LINK STYLES
+/*=======================================
+PORTFOLIO STYLES
 =======================================*/
-
-nav {
-  background-color: ;
-  max-width: 100%;
-  margin: 10px 0 10px 0;
-}
-
-ul li {
-  list-style-type: none;
-}
-nav ul {
-  padding: 0;
-  margin: 0;
-
-}
-
-#about ul {
-  margin: 10px 0;
-  padding: 0;
-}
-
-a, a:link, a:active {
-  text-decoration: none;
-  color: white;
-  font-family: times;
-}
-
-a:hover, a:focus {
+#portfolio img {
+  width: 300px;
+  height: 300px;
 }
 
 
 
-a:visited {
+/*=======================================
+MEDIA QUERIES
+=======================================*/
+@media only screen and (min-width: 640px) {
+
+
+}
+
+@media only screen and (max-width: 942px) {
+  #bio {
+      width: 300px;
+  }
+  #about img {
+    margin: 5% 0;
+  }
+
 }
