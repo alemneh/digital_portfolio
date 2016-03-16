@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Passion+One:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="vendor/styles/normalize.css">
@@ -26,14 +26,23 @@
     </script>
   </head>
   <body>
-    <header>
+    <header class="">
         <nav>
             <li><a href="about">About</a></li>
             <li><a href="portfolio">Portfolio</a></li>
             <li><a href="contact">Contact</a></li>
         </nav>
+        <div id="mobileNav" class="well">
+            <i class="icon-menu "></i>
+            <ul class="text-left">
+              <li><a href="about">About</a></li>
+              <li><a href="portfolio">Portfolio</a></li>
+              <li><a href="contact">Contact</a></li>
+            </ul>
+        </div>
     </header>
 <div class="container">
+
 
     <section id="about" class="text-center">
         <h1>Alemneh Asefa</h1>
@@ -41,32 +50,37 @@
         <img src="images/alem.jpg" alt="" />
         <p id="bio">
           My name is Alem and I am a software engineer in the making. I have been learning web development
-          for about seven months and am currently a student at Free Code Camp, a free all-online code camp
+          for about seven months at Free Code Camp, a free all-online code camp
           at your own pace, that teaches students to become software engineers through the Javascript Stack.
-          I am curenntly proficent in: HTML5, CSS3, Javascript, and Jquery.
+          I am curenntly enrolled in a Full Stack Javascript bootcamp at Code Fellows in Seattle, WA.
         </p>
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Client-Side</h3>
-                <ul>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>Javascript</li>
-                  <li>Bootstrap</li>
-                  <li>AngularJS</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <h3>Server-Side</h3>
-                <ul>
-                  <li>Node</li>
-                  <li>Expresss</li>
-                  <li>Mongo</li>
-                  <li>Passport</li>
-                </ul>
-            </div>
-
+        <h2>Skills</h2>
+        <hr>
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">Client-Side</div>
+      <div class="panel-body">
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Javascript</li>
+          <li>Bootstrap</li>
+          <li>AngularJS</li>
+        </ul>
+      </div>
+    </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">Server-Side</div>
+        <div class="panel-body">
+          <ul>
+            <li>Node</li>
+            <li>Expresss</li>
+            <li>Mongo</li>
+            <li>Passport</li>
+          </ul>
         </div>
+      </div>
+    </div>
     </section>
 
    <section id="portfolio" class="selected text-center">
@@ -83,11 +97,11 @@
       <h1>Contact</h1>
       <hr>
       <ul>
-          <li><a href="about">LinkedIn</a></li>
-          <li><a href="portfolio">GitHub</a></li>
-          <li><a href="contact">Twitter</a></li>
-          <li><a href="contact">Free Code Camp</a></li>
-          <li><a href="contact">Treehouse</a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/pub/alemneh-asefa/17/171/806">LinkedIn</a></li>
+          <li><a target="_blank" href="https://github.com/alemneh">GitHub</a></li>
+          <li><a target="_blank" href="https://twitter.com/alemnehasefa">Twitter</a></li>
+          <li><a target="_blank" href="http://www.freecodecamp.com/alemneh">Free Code Camp</a></li>
+          <li><a target="_blank" href="https://teamtreehouse.com/alemnehasefa">Treehouse</a></li>
       </ul>
 
    </section>
@@ -107,8 +121,8 @@
     <script src="/scripts/examplesController.js"></script>
     <script src="/scripts/aboutController.js"></script>
     <script src="/scripts/contactController.js"></script>
-    <script src="/scripts/repo.js"></script>
-    <script src="/scripts/repoView.js"></script>
+    <!-- <script src="/scripts/repo.js"></script>
+    <script src="/scripts/repoView.js"></script> -->
     <script src="/scripts/routes.js"></script>
     <script></script>
   </body>
