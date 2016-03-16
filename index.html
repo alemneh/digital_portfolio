@@ -1,70 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link href='https://fonts.googleapis.com/css?family=Martel:900' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Passion+One:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="vendor/styles/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/colors.css">
 
     <script id="portfolioData"  type="text/x-handlebars-template">
-      <article id="template" class="center">
-        <img src="{{imageUrl}}">
-        <a href="{{link}}"><h3>{{title}}</h3></a>
-        <p id="info">{{description}}</p>
+      <article id="template" class="row">
+        <div class="col-md-4">
+        <a href="{{link}}" target="_blank"><img src="{{imageUrl}}"></a></div>
+        </div>
+        <div class="col-md-8">
+          <a href="{{link}}" target="_blank"><h3>{{title}}</h3></a>
+          <p class="" id="info">{{description}}</p>
+        </div>
       </article><!-- end portfolio template -->
+      <br />
     </script>
   </head>
   <body>
-    <div id="left" class="center">
-      <header class="site-header">
+    <header class="">
+        <nav>
+            <li><a href="about">About</a></li>
+            <li><a href="portfolio">Portfolio</a></li>
+            <li><a href="contact">Contact</a></li>
+        </nav>
+        <div id="mobileNav" class="well">
+            <i class="icon-menu "></i>
+            <ul class="text-left">
+              <li><a href="about">About</a></li>
+              <li><a href="portfolio">Portfolio</a></li>
+              <li><a href="contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+<div class="container">
+
+
+    <section id="about" class="text-center">
         <h1>Alemneh Asefa</h1>
-        <img id="portfolioPic" src="images/alem.jpg">
         <h3>Web Developer</h3>
-
-
-      </header>
-      <div id="hamburger">
-        <i class="icon-menu"></i>
-      </div>
-
-
-      <nav class="main-nav">
-
+        <img src="images/alem.jpg" alt="" />
+        <p id="bio">
+          My name is Alem and I am a software engineer in the making. I have been learning web development
+          for about seven months at Free Code Camp, a free all-online code camp
+          at your own pace, that teaches students to become software engineers through the Javascript Stack.
+          I am curenntly enrolled in a Full Stack Javascript bootcamp at Code Fellows in Seattle, WA.
+        </p>
+        <h2>Skills</h2>
+        <hr>
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">Client-Side</div>
+      <div class="panel-body">
         <ul>
-          <li class="tab" data-content=""><a href="about"><i class="icon icon-home"></i> About</a></li>
-          <li class="tab" ><a href="portfolio"><i class="icon icon-rocket"></i> Portfolio</a></li>
-          <li><a href="http://twitter.com/alemneha" target="_blank"><i class="icon icon-twitter3"></i> Twitter</a></li>
-          <li><a href="http://github.com/alemneh" target="_blank"><i class="icon icon-github"></i> GitHub</a></li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Javascript</li>
+          <li>Bootstrap</li>
+          <li>AngularJS</li>
         </ul>
-      </nav>
-    </div><!-- end left colum -->
-      <div id="right">
-      <main class="">
-      <section id="about" class="center">
+      </div>
+    </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">Server-Side</div>
+        <div class="panel-body">
+          <ul>
+            <li>Node</li>
+            <li>Expresss</li>
+            <li>Mongo</li>
+            <li>Passport</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </section>
 
-         <h1>About</h1>
-         <p>Hello, my name is Alem I hold a BA in International Security and Conflict Resolution (ISCOR) with an emphasis in economics from SDSU. After completing my BA I pursed a MA in Economics but half way through found a love for coding and decided to make change of direction in what I wanted to pursue. I have been teaching myself to code for the past year through many online tutorials and classes that I can find. I decided on focusing on javascript as the programming language I wanted to learn because of the potential it has in the future, also not to mention that it is the language of the web and can now be used on the server-side with nodeJS.</p>
-         <h3>Git Repos</h3>
-         <ul></ul>
-       </section><!-- end about section -->
-       <section id="portfolio" class="selected center">
+   <section id="portfolio" class="selected text-center">
 
-         <h1>Portfolio</h1><!-- handlebars data comes after this -->
-         <dl>
-           <dt><strong>Total projects:</strong></dt><dd class="projects"></dd>
-           <dt><strong>Total words:</strong></dt><dd class="words"></dd>
-         </dl><!-- end of stats table -->
+     <h1>Portfolio</h1><!-- handlebars data comes after this -->
+     <hr>
+     <dl>
+       <dt><strong>Total projects:</strong></dt><dd class="projects"></dd>
+       <!-- <dt><strong>Total words:</strong></dt><dd class="words"></dd> -->
+     </dl><!-- end of stats table -->
 
-       </section><!-- end portfolio section -->
+   </section><!-- end portfolio section -->
+   <section id="contact">
+      <h1>Contact</h1>
+      <hr>
+      <ul>
+          <li><a target="_blank" href="https://www.linkedin.com/pub/alemneh-asefa/17/171/806">LinkedIn</a></li>
+          <li><a target="_blank" href="https://github.com/alemneh">GitHub</a></li>
+          <li><a target="_blank" href="https://twitter.com/alemnehasefa">Twitter</a></li>
+          <li><a target="_blank" href="http://www.freecodecamp.com/alemneh">Free Code Camp</a></li>
+          <li><a target="_blank" href="https://teamtreehouse.com/alemnehasefa">Treehouse</a></li>
+      </ul>
 
-      </main><!-- end main -->
+   </section>
+</div>
+
       <footer class="center">
-        &copy; 2015 Alemneh Asefa 
+        &copy; 2015 Alemneh Asefa
       </footer><!-- end footer -->
-    </div><!-- end right colum -->
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="/vendor/scripts/page.js"></script>
@@ -74,8 +120,9 @@
     <script src="scripts/exampleView.js"></script>
     <script src="/scripts/examplesController.js"></script>
     <script src="/scripts/aboutController.js"></script>
-    <script src="/scripts/repo.js"></script>
-    <script src="/scripts/repoView.js"></script>
+    <script src="/scripts/contactController.js"></script>
+    <!-- <script src="/scripts/repo.js"></script>
+    <script src="/scripts/repoView.js"></script> -->
     <script src="/scripts/routes.js"></script>
     <script></script>
   </body>

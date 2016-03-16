@@ -5,8 +5,9 @@
   aboutController.index = function() {
     $('#portfolio').hide();
     $('#about').show();
+    $('#contact').hide();
 
-    repos.requestRepos(repoView.index);
+    // repos.requestRepos(repoView.index);
   };
 
   module.aboutController = aboutController;

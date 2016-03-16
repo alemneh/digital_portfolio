@@ -1,20 +1,44 @@
 [
   {
-    "title":       "Project 01",
-    "imageUrl":    "http://placehold.it/350x150",
-    "link":        "",
-    "description": "Baseball ipsum dolor sit amet base on balls full count leadoff. National pastime stance pine tar dribbler rookie dodgers hardball plate."
+    "title":       "Random Proverbs",
+    "imageUrl":    "images/example02.jpg",
+    "link":        "http://codepen.io/alemneh/full/adbEex/",
+    "description": "HTML5, CSS3, jQuery, Bootstrap"
   },
   {
-    "title":       "Project 02",
-    "imageUrl":    "http://placehold.it/350x150",
-    "link":        "",
-    "description": "Baseball ipsum dolor sit amet base on balls full count leadoff. National pastime stance pine tar dribbler rookie dodgers hardball plate."
+    "title":       "Simon Say's Game",
+    "imageUrl":    "images/example03.jpg",
+    "link":        "http://codepen.io/alemneh/full/bEbxrq/",
+    "description": "HTML5, CSS3, jQuery"
   },
   {
-    "title":       "Project 03",
-    "imageUrl":    "http://placehold.it/350x150",
-    "link":        "",
-    "description": "Baseball ipsum dolor sit amet base on balls full count leadoff. National pastime stance pine tar dribbler rookie dodgers hardball plate."
+    "title":       "Local Weather App",
+    "imageUrl":    "images/example04.jpg",
+    "link":        "http://codepen.io/alemneh/full/WQLLqR/",
+    "description": "HTML5, CSS3, jQuery, Bootstrap"
+  },
+  {
+    "title":       "Twitch.tv User Status",
+    "imageUrl":    "images/example05.jpg",
+    "link":        "http://codepen.io/alemneh/full/BjamPg/",
+    "description": "HTML5, CSS3, jQuery, Bootstrap"
+  },
+  {
+    "title":       "Live News Feed",
+    "imageUrl":    "images/example06.jpg",
+    "link":        "http://codepen.io/alemneh/full/RWOLwq/",
+    "description": "HTML5, CSS3, jQuery, Bootstrap"
+  },
+  {
+    "title":       "Wikipedia API",
+    "imageUrl":    "images/example07.jpg",
+    "link":        "http://codepen.io/alemneh/full/dYEWpe/",
+    "description": "HTML5, CSS3, jQuery, Bootstrap"
+  },
+  {
+    "title":       "Tic Tac Teo Game",
+    "imageUrl":    "images/example08.jpg",
+    "link":        "http://codepen.io/alemneh/full/XmLXav/",
+    "description": "HTML5, CSS3, jQuery, Bootstrap"
   }
 ]

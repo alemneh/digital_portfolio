@@ -1,134 +1,142 @@
+/*=======================================
+MAIN STYLES
+=======================================*/
 
 body {
-  line-height: 1.5;
-  font-size: 100%;
-  color: #313131;
-
+  background-color: lightgreen;
 }
 
-
-
-
-.center {
-  text-align: center;
-}
-
-#left {
-  background-color: black;
-  max-width: 30%;
-  float: left;
-  height: 100%;
-  position: fixed;
-  padding: 5%;
-
-}
-
-#right {
-  max-width: 60%;
-  float: right;
-  height: 200%;
-  padding: 5%;
-
-}
-
-hr {
-  margin: 1em;
-  width: 80%;
+p {
+    font-size: 20px;
 }
 
 img {
-  max-width: 100%;
+  border-radius: 5%;
+  border: 5px solid darkgreen;
 }
 
-#portfolioPic {
-  margin: 5px 0;
-  padding: 0;
-  border-radius: 50%;
+li {
+    list-style-type: none;
 }
 
-/*TEXT STYLES
+
+
+h1 {
+  text-align: center;
+}
+
+
+
+footer{
+  text-align: center;
+  color: #0A8654;
+}
+
+/*=======================================
+ABOUT STYLES
 =======================================*/
-#template {
-  padding: 0;
-  margin: 50px 0;
-  color: black;
+#about img {
+  margin: 2% 0;
 }
 
-#template img {
-  margin: 0 0 10px 0;
-}
-h1, h2, h3 {
-  padding: 0;
-  margin: 0;
-  font-family: 'Martel', serif;
-  color: #0290A7;
-}
-p {
-  font-size: 1.2em;
-  font-family: times;
+#about, #portfolio, #contact {
+  margin: 5% 0;
 }
 
-i #hamburger {
+#bio {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#about li {
+    margin-bottom: 2%;
+}
+
+/*=======================================
+NAVIGATION STYLES
+=======================================*/
+nav li {
+    display: inline;
+    margin-right: 6%;
+}
+
+header {
+    text-align: center;
+}
+a {
+  color: #0A8654;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
     color: white;
-
-}
-i.icon-menu{
-  background-color: black;
-  color: white;
-  float: right;
-  font-size: 400%;
-  padding: 0;
-  margin: 0;
-
-
-
-}
-address {
-  display: inline-block;
 }
 
-dt,dd{
-  display:inline;
+.icon-menu {
+    font-size: 40px;
+    margin-left: 90%;
 }
 
-dd {
-  margin-left: 5px;
-  margin-right: 10px;
+#mobileNav {
+    display: none;
 }
 
-/*LINK STYLES
+#mobileNav ul {
+    font-size: 20px;
+    display: none;
+
+}
+
+#mobileNav li {
+    margin-bottom: 4%;
+}
+
+
+
+
+/*=======================================
+PORTFOLIO STYLES
+=======================================*/
+#portfolio img {
+  width: 300px;
+  height: 300px;
+}
+
+
+/*=======================================
+CONTACT STYLES
 =======================================*/
 
-nav {
-  background-color: ;
-  max-width: 100%;
-  margin: 10px 0 10px 0;
-}
 
-ul li {
-  list-style-type: none;
-}
-nav ul {
-  padding: 0;
-  margin: 0;
+/*=======================================
+MEDIA QUERIES
+=======================================*/
+@media only screen and (min-width: 640px) {
+
 
 }
 
-#about ul {
-  margin: 10px 0;
-  padding: 0;
-}
+@media only screen and (max-width: 942px) {
+  #bio {
+      width: 300px;
+  }
+  #about img {
+    margin: 5% 0;
+  }
 
-a, a:link, a:active {
-  text-decoration: none;
-  color: white;
-  font-family: times;
-}
+  #mobileNav {
+      display:block;
+  }
 
-a:hover, a:focus {
-}
+  nav {
+    display: none;
+  }
 
+  #contact li {
+    font-size: 20px;
+    margin-bottom: 4%;
+  }
 
-
-a:visited {
 }

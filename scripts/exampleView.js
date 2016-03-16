@@ -3,7 +3,7 @@
 
   exampleView.handleMainNav = function() {
     $('.icon-menu').on('click', function(e) {
-      $('ul').toggle();
+      $('#mobileNav ul').toggle();
     });
   };
   exampleView.handleMainNav();
